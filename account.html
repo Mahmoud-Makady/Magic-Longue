@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script
+      src="https://kit.fontawesome.com/3162f5d9b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./manifest_and_icons/manifest.json" />
+    <title>حسابي</title>
+  </head>
+  <body>
+    <!-- start header  -->
+    <header>
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img src="images/logo.webp" alt="logo" />
+        </a>
+        <i class="fa-solid fa-bars menu"></i>
+        <nav>
+          <i class="fas fa-times close-nav exit"></i>
+          <ul class="links">
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">قائمة الطعام</a></li>
+            <li><a href="#">الحجوزات</a></li>
+            <li><a href="#">التواصل</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end header  -->
+    <!-- start account -->
+    <div class="account">
+      <h2 class="section-headline">حسابي <i class="fa-solid fa-user"></i></h2>
+      <div class="container">
+        <form action="">
+          <div class="user-image">
+            <img src="images/user.png" alt="user" />
+            <label for="file-upload"> تغيير الصورة</label>
+            <input
+              type="file"
+              id="file-upload"
+              name="file-upload"
+              onchange="readURL(this);"
+            />
+          </div>
+          <div class="input required">
+            <label for="name">الإسم </label>
+            <input type="text" name="name" id="name" value="محمد احمد" />
+          </div>
+          <div class="input required">
+            <label for="email">البريد الالكتروني </label>
+            <input type="email" name="email" id="email" value="ewef@wf.com" />
+          </div>
+          <input type="submit" class="primary-butt" value="تحديث" />
+        </form>
+      </div>
+    </div>
+    <!-- end account -->
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
